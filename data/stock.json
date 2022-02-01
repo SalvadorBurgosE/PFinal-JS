@@ -5,7 +5,7 @@
     "tipo": "camiseta",
     "precio": 6999,
     "talle": "L",
-    "img": "../img/camiseta.png",
+    "img": "img/camiseta.png",
     "cantidad": 1
   },
   {
@@ -14,7 +14,7 @@
     "tipo": "camiseta",
     "precio": 8999,
     "talle": "L",
-    "img": "../img/camisetados.png",
+    "img": "img/camisetados.png",
     "cantidad": 1
   },
   {
@@ -23,7 +23,7 @@
     "tipo": "camiseta",
     "precio": 6999,
     "talle": "L",
-    "img": "../img/camisetatres.png",
+    "img": "img/camisetatres.png",
     "cantidad": 1
   },
   {
@@ -32,7 +32,7 @@
     "tipo": "camiseta",
     "precio": 8999,
     "talle": "L",
-    "img": "../img/camisetacuatro.png",
+    "img": "img/camisetacuatro.png",
     "cantidad": 1
   },
   {
@@ -41,7 +41,7 @@
     "tipo": "camiseta",
     "precio": 6999,
     "talle": "L",
-    "img": "../img/camisetacinco.png",
+    "img": "img/camisetacinco.png",
     "cantidad": 1
   },
   {
@@ -50,7 +50,7 @@
     "tipo": "camiseta",
     "precio": 8999,
     "talle": "L",
-    "img": "../img/camisetaseis.png",
+    "img": "img/camisetaseis.png",
     "cantidad": 1
   },
   {
@@ -59,7 +59,7 @@
     "tipo": "combo",
     "precio": 10999,
     "talle": "S",
-    "img": "../img/prendasiete.png",
+    "img": "img/prendasiete.png",
     "cantidad": 1
   },
   {
@@ -68,7 +68,7 @@
     "tipo": "short",
     "precio": 5999,
     "talle": "M",
-    "img": "../img/prendaocho.png",
+    "img": "img/prendaocho.png",
     "cantidad": 1
   },
   {
@@ -77,7 +77,7 @@
     "tipo": "buzo",
     "precio": 9999,
     "talle": "L",
-    "img": "../img/prendanueve.png",
+    "img": "img/prendanueve.png",
     "cantidad": 1
   }
 ]
