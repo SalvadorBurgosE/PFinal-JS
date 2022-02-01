@@ -73,7 +73,7 @@ h1 {
 }
 
 .form-div {
-  background-image: url(../img/dos.png);
+  background-image: url(/img/dos.png);
   height: 300px;
   width: 100%;
   position: relative;
