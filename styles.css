@@ -1,0 +1,505 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+header {
+  border-top: red solid 4px;
+  box-shadow: 0 1px 2px 2px rgb(208, 207, 207);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 5px 50px 0px 50px;
+  height: 90px;
+}
+
+.logo-div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.logo {
+  width: 70px;
+}
+
+h1 {
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.98px;
+
+}
+
+#boton-carrito {
+  border: none;
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+#contadorCarrito {
+  position: absolute;
+  color: white;
+  top: 10;
+  right: -10;
+  z-index: 2;
+  background-color: red;
+  height: 25px;
+  width: 25px;
+  border-radius: 60%;
+  font-size: 18px;
+}
+
+.mainImg {
+  box-shadow: 0 1px 2px 2px rgb(208, 207, 207);
+}
+
+.form-div {
+  background-image: url(/img/dos.png);
+  height: 300px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 2px 2px rgb(208, 207, 207);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.98px;
+}
+
+.form-input {
+  font-weight: 500;
+}
+
+.form-submit {
+  background-color: red;
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid #e7e7e7;
+}
+
+.footer__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px 10px 50px;
+  border-bottom: 2px solid #e7e7e7;;
+}
+
+.footer-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0,75px;
+}
+
+.footer-redes {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.footer-redes-item {
+  padding: 0px 20px;
+}
+
+.footer-redes-logo {
+  height: 40px;
+}
+
+.footer-text {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0,5px;
+  text-align: center;
+}
+
+.footer-div-datos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px ;
+}
+
+#contenedor-productos {
+  max-width: 90vw;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.producto {
+  max-width: 25%;
+  padding: 10px;
+  margin: 20px;
+
+}
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 5;
+}
+
+.modal-carrito {
+  position: relative;
+  background-color: white;
+  min-width: 500px;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all .5s;
+  border: 3px solid red;
+  border-radius: 10px;
+}
+
+.modal-active .modal-carrito {
+  margin-top: 0;
+}
+
+.modal-carrito h3 {
+  color: red;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0,9px;
+}
+
+.modal-carrito #carritoCerrar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: red;
+  border: none;
+  background-color: white;
+}
+
+.modal-carrito .precioProducto {
+  padding-top: 10px;  
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+}
+
+.card .card-image .card-title{
+  color :black;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.button-add {
+  position: absolute;
+  right: 5;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+
+}
+
+.productoEnCarrito {
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boton-eliminar {
+  background-color: white;
+  color: red;
+  border: none;
+  font-size: 20px;
+}
+
+.boton-eliminar:focus {
+  background-color: white;
+}
+
+/*Segundo modal*/
+
+
+html {
+  --card-color: #cacaca;
+  --text-color: #e1e1e1;
+}
+
+#finalizar{
+  display: none;
+}
+
+.modal{
+  width: 815px;
+  height: 650px;
+}
+
+.modal-footer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 680px;
+}
+
+.container .col1 {
+  perspective: 1000;
+  transform-style: preserve-3d;
+}
+.container .col1 .card {
+  position: relative;
+  width: 420px;
+  height: 250px;
+  margin-bottom: 85px;
+  margin-right: 10px;
+  border-radius: 17px;
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
+  transition: all 1s;
+  transform-style: preserve-3d;
+}
+.container .col1 .card .front {
+  position: absolute;
+  background: var(--card-color);
+  border-radius: 17px;
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(1px);
+  transition: background 0.3s;
+  z-index: 50;
+  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px);
+  backface-visibility: hidden;
+}
+.container .col1 .card .front .type {
+  position: absolute;
+  width: 75px;
+  height: 45px;
+  top: 20px;
+  right: 20px;
+}
+.container .col1 .card .front .type img {
+  width: 100%;
+  float: right;
+}
+.container .col1 .card .front .card_number {
+  position: absolute;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  top: 110px;
+  color: var(--text-color);
+  word-spacing: 3px;
+  transition: color 0.5s;
+}
+.container .col1 .card .front .date {
+  position: absolute;
+  bottom: 40px;
+  right: 55px;
+  width: 90px;
+  height: 35px;
+  color: var(--text-color);
+  transition: color 0.5s;
+}
+.container .col1 .card .front .date .date_value {
+  font-size: 12px;
+  position: absolute;
+  margin-left: 22px;
+  margin-top: 12px;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.5s;
+}
+.container .col1 .card .front .date:after {
+  content: "MONTH / YEAR";
+  position: absolute;
+  display: block;
+  font-size: 7px;
+  margin-left: 20px;
+}
+.container .col1 .card .front .date:before {
+  content: "valid \athru";
+  position: absolute;
+  display: block;
+  font-size: 8px;
+  white-space: pre;
+  margin-top: 8px;
+}
+.container .col1 .card .front .fullname {
+  position: absolute;
+  font-size: 20px;
+  bottom: 40px;
+  color: var(--text-color);
+  transition: color 0.5s;
+}
+.container .col1 .card .back {
+  position: absolute;
+  width: 100%;
+  border-radius: 17px;
+  height: 100%;
+  background: var(--card-color);
+  transform: rotateY(180deg);
+}
+.container .col1 .card .back .magnetic {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 25px;
+}
+.container .col1 .card .back .bar {
+  position: absolute;
+  width: 80%;
+  height: 37px;
+  background: rgba(255, 255, 255, 0.7);
+  left: 10px;
+  margin-top: 100px;
+}
+.container .col1 .card .back .seccode {
+  font-size: 13px;
+  color: var(--text-color);
+  font-weight: 500;
+  position: absolute;
+  top: 100px;
+  right: 40px;
+}
+.container .col1 .card .back .chip {
+  bottom: 45px;
+  left: 10px;
+}
+.container .col1 .card .back .disclaimer {
+  position: absolute;
+  width: 65%;
+  left: 80px;
+  color: #f1f1f1;
+  font-size: 8px;
+  bottom: 55px;
+}
+.container .col2 input {
+  display: block;
+  width: 260px;
+  height: 30px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin: 7px;
+  font-size: 17px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  transition: background 0.5s;
+}
+.container .col2 input:focus {
+  outline-width: 0;
+  background: rgba(31, 134, 252, 0.15);
+  transition: background 0.5s;
+}
+.container .col2 label {
+  padding-left: 8px;
+  font-size: 15px;
+  color: #444;
+}
+.container .col2 .ccv {
+  width: 40%;
+}
+.container .col2 .buy {
+  width: 260px;
+  height: 50px;
+  position: relative;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: none;
+  background: #42c2df;
+  color: white;
+  font-size: 20px;
+  transition: background 0.4s;
+  cursor: pointer;
+}
+.container .col2 .buy i {
+  font-size: 20px;
+}
+.container .col2 .buy:hover {
+  background: #3594a9;
+  transition: background 0.4s;
+}
+
+.chip {
+  position: absolute;
+  width: 55px;
+  height: 40px;
+  background: #bbb;
+  border-radius: 7px;
+}
+.chip:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 25px;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #ddd;
+}

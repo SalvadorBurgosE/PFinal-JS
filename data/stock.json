@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta Titular",
+    "tipo": "camiseta",
+    "precio": 6999,
+    "talle": "L",
+    "img": "/img/camiseta.png",
+    "cantidad": 1
+  },
+  {
+    "id": 2,
+    "nombre": "Camiseta Alt.",
+    "tipo": "camiseta",
+    "precio": 8999,
+    "talle": "L",
+    "img": "/img/camisetados.png",
+    "cantidad": 1
+  },
+  {
+    "id": 3,
+    "nombre": "Camiseta Arquero",
+    "tipo": "camiseta",
+    "precio": 6999,
+    "talle": "L",
+    "img": "/img/camisetatres.png",
+    "cantidad": 1
+  },
+  {
+    "id": 4,
+    "nombre": "Camiseta Alt. 2",
+    "tipo": "camiseta",
+    "precio": 8999,
+    "talle": "L",
+    "img": "/img/camisetacuatro.png",
+    "cantidad": 1
+  },
+  {
+    "id": 5,
+    "nombre": "Chomba Clásica",
+    "tipo": "camiseta",
+    "precio": 6999,
+    "talle": "L",
+    "img": "/img/camisetacinco.png",
+    "cantidad": 1
+  },
+  {
+    "id": 6,
+    "nombre": "Remera Clásica",
+    "tipo": "camiseta",
+    "precio": 8999,
+    "talle": "L",
+    "img": "/img/camisetaseis.png",
+    "cantidad": 1
+  },
+  {
+    "id": 7,
+    "nombre": "Combo Niño",
+    "tipo": "combo",
+    "precio": 10999,
+    "talle": "S",
+    "img": "/img/prendasiete.png",
+    "cantidad": 1
+  },
+  {
+    "id": 8,
+    "nombre": "Short Arquero",
+    "tipo": "short",
+    "precio": 5999,
+    "talle": "M",
+    "img": "/img/prendaocho.png",
+    "cantidad": 1
+  },
+  {
+    "id": 9,
+    "nombre": "Buzo Entrenamiento",
+    "tipo": "buzo",
+    "precio": 9999,
+    "talle": "L",
+    "img": "/img/prendanueve.png",
+    "cantidad": 1
+  }
+]
