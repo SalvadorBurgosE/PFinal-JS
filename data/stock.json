@@ -5,7 +5,7 @@
     "tipo": "camiseta",
     "precio": 6999,
     "talle": "L",
-    "img": "../img/camiseta.png",
+    "img": "img/camiseta.png",
     "cantidad": 1
   },
   {
@@ -14,7 +14,7 @@
     "tipo": "camiseta",
     "precio": 8999,
     "talle": "L",
-    "img": "/img/camisetados.png",
+    "img": "img/camisetados.png",
     "cantidad": 1
   },
   {
